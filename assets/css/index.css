@@ -12,10 +12,12 @@
     --hover-dark-color: var(--primary-background-color);
     --gradient-color: linear-gradient(
         115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --gradient-color2: linear-gradient(
+        -90deg, #FF9572,#FF6D93,#D15DB2, #7A5EC2);
     --transparent-light-color: rgba(255,255,255,.05);
     --transparent-dark-color: rgba(0,0,0,.75);
     --font-family: 'Poppins', sans-serif;
-    --font-size-xsm: 1rem;
+    --font-size-xsm: 1.1rem;
     --font-size-sm: 1.6rem;
     --font-size-md: 2rem;
     --font-size-lg: 3rem;
@@ -134,11 +136,9 @@ i{
 /*            DETAILS INFO        */
 /*====================================*/
 .home{
-    /* background: linear-gradient(-90deg, #FF9572,#FF6D93,#D15DB2, #7A5EC2); */
-    background: linear-gradient(-95deg, #7A5EC2,#00C2A5,#008B71,#2D8CA2);
-   
+    background: var(--gradient-color2);
     background-size: 400%;
-    animation: gradient 25s ease infinite;
+    animation: gradient 30s ease infinite;
     height: 60vh;
 }
 
@@ -178,7 +178,7 @@ i{
     display:flex;
     padding-left: 30px;
     text-align: center;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
 }
 
 span{
@@ -195,7 +195,9 @@ span{
 /*====================================*/
 
 @media only screen and (max-width: 600px) {
-    
+    .home{
+        height: 50vh;
+    }
     .info-container{
         margin-top: 10px;
     }
@@ -207,7 +209,7 @@ span{
     }
 
     .details{
-        font-size:var(--font-size-xsm);
+        font-size:var(--font-size-sxm);
     }
 
     .wrapper{
