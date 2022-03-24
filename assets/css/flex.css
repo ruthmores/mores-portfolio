@@ -1,0 +1,38 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    color: aliceblue;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: var(--light-color-alt);
+    background-color: var(--primary-background-color);
+    letter-spacing: 1px;
+    transition: background-color .25s,color .25s;
+}
+
+.container{
+    
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.box{
+   
+    height: 50px;
+    width: 150px;
+  
+    background-color: darkblue;
+}

@@ -15,9 +15,9 @@
     --transparent-light-color: rgba(255,255,255,.05);
     --transparent-dark-color: rgba(0,0,0,.75);
     --font-family: 'Poppins', sans-serif;
-    --font-size-xsm: 1.2rem;
+    --font-size-xsm: 1rem;
     --font-size-sm: 1.6rem;
-    --font-size-md: 2.4rem;
+    --font-size-md: 2rem;
     --font-size-lg: 3rem;
     --font-size-xl: 5rem;
     --gap: 2rem;
@@ -44,7 +44,7 @@ html{
 body{
     font-family: var(--font-family);
     font-size: var(--font-size-sm);
-    color: var(--light-color-alt);
+    color: var(--primary-background-color);
     background-color: var(--primary-background-color);
     letter-spacing: 1px;
     transition: background-color .25s,color .25s;
@@ -93,7 +93,7 @@ i{
 }
 
 .section-padding {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 
   
@@ -108,15 +108,61 @@ i{
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+   
+
 }
 
+.btn-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: var(--font-size-sm);
+  
+    
+}
+
+.project{
+    height: 30px;
+    width: 150px;
+    margin: 10px;
+    /* background-color: var(--light-color-txt); */
+    border-radius: 1rem;
+}
 
 /*====================================*/
 /*            DETAILS INFO        */
 /*====================================*/
+.home{
+    /* background: linear-gradient(-90deg, #FF9572,#FF6D93,#D15DB2, #7A5EC2); */
+    background: linear-gradient(-95deg, #7A5EC2,#00C2A5,#008B71,#2D8CA2);
+   
+    background-size: 400%;
+    animation: gradient 25s ease infinite;
+    height: 60vh;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.logo{
+    font-size: var(--font-size-md);
+    
+}
 
 .info-container{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .name{
@@ -136,6 +182,38 @@ i{
 }
 
 span{
-    color:var(--light-color-txt);
+    color:var(--light-color);
     margin-left: 10px;
 }
+
+
+
+
+
+/*====================================*/
+/*            MOBILE RESPONSIVE       */
+/*====================================*/
+
+@media only screen and (max-width: 600px) {
+    
+    .info-container{
+        margin-top: 10px;
+    }
+    
+    
+    .name{
+       
+        font-size: var(--font-size-md);
+    }
+
+    .details{
+        font-size:var(--font-size-xsm);
+    }
+
+    .wrapper{
+        font-size: var(--font-size-xsm);
+    }
+}
+
+
+/*  button */

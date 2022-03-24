@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient with Animation</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            /* background: linear-gradient(-45deg, #ee7752, #e73c73 , #23a6d5, #23d5ab); */
+            /* background: linear-gradient(-45deg, #845EC2, #D65DB1,#FF6F91, #FF9671, #FFC75F,#F9F871); */
+           /* background: linear-gradient(-45deg, #5EC2BA, #66D1B4, #7DDFA6,#A0EA94,#CAF381); */
+           /* background: linear-gradient(-45deg, #BFB2F3, #96CAF7 ,#9CDCAA, #F8A3A8,#B96CE0,#F8A3A8,#B96CE0); */
+           /* background-image: radial-gradient( circle farthest-corner at 11.7% 80.6%,  rgba(249,185,255,1) 0%, rgba(177,172,255,1) 49.3%, rgba(98,203,255,1) 89% );  */
+           background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(239,153,237,1) 0%, rgba(235,163,249,1) 32.2%, rgba(253,200,200,1) 90% );
+           background-size: 400%;
+            animation: gradient 25s ease infinite;
+            height: 100vh;
+        }
+
+        @keyframes gradient{
+            0%{
+                background-position: 0% 50%;
+            }
+
+            50%{
+                background-position: 100% 50%;
+            }
+
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Animation</h1>
+    <h2>Pure CSS Gradient Background Animation</h2>
+</body>
+</html>
