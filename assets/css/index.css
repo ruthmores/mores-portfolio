@@ -45,7 +45,7 @@ html{
 
 body{
     font-family: var(--font-family);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     color: var(--primary-background-color);
     background-color: var(--primary-background-color);
     letter-spacing: 1px;
@@ -139,7 +139,7 @@ i{
     background: var(--gradient-color2);
     background-size: 400%;
     animation: gradient 30s ease infinite;
-    height: 60vh;
+    height: 120vh;
 }
 
 @keyframes gradient{
@@ -164,6 +164,25 @@ i{
 .info-container{
     margin-top: 40px;
 }
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.image img{
+    width: 200px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 10px;
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+}
+
+
 
 .name{
     /* margin: var(--margin-md); */
@@ -209,10 +228,14 @@ span{
     }
 
     .details{
-        font-size:var(--font-size-sxm);
+        font-size:var(--font-size-xsm);
     }
 
     .wrapper{
+        font-size: var(--font-size-xsm);
+    }
+
+    .btn{
         font-size: var(--font-size-xsm);
     }
 }
